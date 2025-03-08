@@ -1,18 +1,17 @@
-﻿-- QuangLM
 SET NOCOUNT ON
 GO
 USE master
-IF EXISTS(SELECT * FROM sys.sysdatabases WHERE name='SvThucTap')
-	DROP DATABASE SvThucTap
+IF EXISTS(SELECT * FROM sys.sysdatabases WHERE name='DB')
+	DROP DATABASE DB
 
 
 GO
 USE master
-CREATE DATABASE SvThucTap
+CREATE DATABASE DB
 
 
 GO
-USE SvThucTap
+USE DB
 
 
 GO
