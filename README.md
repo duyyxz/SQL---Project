@@ -12,6 +12,7 @@ Warehouse managers need a robust inventory management system to efficiently trac
 ### Questions I Wanted To Answer From the Dataset:
 ### 1. Display the top 10 items with the highest total export quantity in 2022
 
+Query:
 ```sql
 GO
 SELECT TOP 10 dd.ItemCode, MAX(it.Name) AS ItemName
@@ -29,6 +30,7 @@ Result:
 ![](https://www.example.com/images/landscape.jpg)
 
 ### 2. Inventory summary for January 2022
+Query:
 ```sql
 GO
 DECLARE @_Date1 DATE = '2022-01-01', @_Date2 DATE = '2022-01-31'
@@ -64,9 +66,11 @@ SELECT W.ItemCode
 FROM W
 LEFT JOIN dbo.Item it ON W.ItemCode=it.Code
 GROUP BY GROUPING SETS ((W.ItemCode),())
-
 ```
+Result:
+![](https://www.example.com/images/landscape.jpg)
 ### 3. -- Summary report for 2022 by customer.
+Query:
 ```sql
 GO
 SELECT d.CustomerCode, MAX(cus.Name) AS CustomerName
@@ -80,7 +84,10 @@ WHERE d.IsActive = 1
   AND YEAR(d.DocDate) = 2022
 GROUP BY d.CustomerCode
 ```
+Result:
+![](https://www.example.com/images/landscape.jpg)
 ### 4. Display document records
+Query:
 ```sql
 SELECT d.DocDate, d.DocNo, dd.ItemCode, it.Name AS ItemName
        ,dd.Quantity
@@ -92,5 +99,7 @@ LEFT JOIN dbo.Item AS it ON dd.ItemCode = it.Code
 WHERE d.IsActive = 1 AND YEAR(d.DocDate) = 2022
 ORDER BY d.DocDate
 ```
-
+Result:
+![](https://www.example.com/images/landscape.jpg)
 ### Conclusion
+By leveraging SQL to analyze warehouse data, we can extract meaningful insights that help optimize inventory management, improve stock forecasting, and enhance operational efficiency. Using these queries, decision-makers can identify trends, track item movements, and make data-driven decisions to improve warehouse performance.
