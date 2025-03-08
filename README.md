@@ -1,2 +1,2 @@
-# SQL-Project
+# Warehouse Management Database Project
 SQL Project
