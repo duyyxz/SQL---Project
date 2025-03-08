@@ -7,7 +7,7 @@ Warehouse managers need a robust inventory management system to efficiently trac
 ### Tools
 Tool Used: SQL Server   
 [Datasets Used](https://github.com/duyyxz/SQL-Project/blob/main/Database.sql)   
-[SQL Code]()
+[SQL Code](https://github.com/duyyxz/SQL-Project/blob/main/SQLQuery.sql)
 
 ### Questions I Wanted To Answer From the Dataset:
 ### 1. Hiển thị thông tin 10 vật tư có tổng số lượng xuất nhiều nhất trong năm 2021
