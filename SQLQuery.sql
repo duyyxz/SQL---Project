@@ -1,4 +1,4 @@
-﻿-- Display customer information who had shipments exported in 2021
+﻿-- Display customer information who had shipments exported in 2022
 SELECT *
 FROM dbo.Customer
 WHERE Code IN
