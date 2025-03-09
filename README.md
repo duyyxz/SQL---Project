@@ -10,7 +10,7 @@ Warehouse managers need a robust inventory management system to efficiently trac
 [SQL Code](https://github.com/duyyxz/SQL-Project/blob/main/SQLQuery.sql)
 
 ### Questions I Wanted To Answer From the Dataset:
-### 1. Display the top 10 items with the highest total export quantity in 2022
+# 1. Display the top 10 items with the highest total export quantity in 2022
 
 Query:
 ```sql
@@ -34,7 +34,7 @@ This query retrieves the top 10 exported items in 2022 by summing up the quantit
 The ORDER BY TotalQuantityOut DESC ensures that the highest exported items appear first.
 This insight helps in identifying the most demanded products, aiding in inventory restocking and supplier negotiations.
 
-### 2. Inventory summary for January 2022
+# 2. Inventory summary for January 2022
 Query:
 ```sql
 GO
@@ -80,7 +80,7 @@ This query calculates opening stock, total imports, total exports, and closing s
 It uses a Common Table Expression (CTE) to compute stock movements before aggregating them.
 The closing stock helps managers track inventory levels and avoid shortages or overstocking.
 This report is crucial for warehouse optimization and forecasting future stock needs.
-### 3. -- Summary report for 2022 by customer.
+# 3. -- Summary report for 2022 by customer.
 Query:
 ```sql
 GO
@@ -105,7 +105,7 @@ Total quantity of items exported.
 It helps in identifying top customers, analyzing purchase patterns, and making customer-centric business decisions.
 Understanding which customers place large orders can help in offering better discounts or personalized services.
 
-### 4. Display document records
+# 4. Display document records
 Query:
 ```sql
 SELECT d.DocDate, d.DocNo, dd.ItemCode, it.Name AS ItemName
@@ -129,5 +129,5 @@ Item details (code, name, quantity).
 Import & Export quantities (separately calculated).
 This data helps in tracking inventory movements, identifying delays or anomalies, and improving record accuracy.
 Warehouse managers can use this to audit stock levels and verify transaction histories.
-### Conclusion
+# Conclusion
 By leveraging SQL to analyze warehouse data, we can extract meaningful insights that help optimize inventory management, improve stock forecasting, and enhance operational efficiency. Using these queries, decision-makers can identify trends, track item movements, and make data-driven decisions to improve warehouse performance.
